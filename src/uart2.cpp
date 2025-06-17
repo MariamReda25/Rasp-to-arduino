@@ -24,7 +24,7 @@ void sendMessageToArduino() {
     tcsetattr(serialPort, TCSANOW, &options);
     
     // Send the character 's'
-    write(serialPort, "s", 1);
+    write(serialPort, "S", 1);
     write(serialPort, "\n", 1);  // Optional: add newline if needed
 
     std::cout << "📡 Sent to Arduino: s" << std::endl;
